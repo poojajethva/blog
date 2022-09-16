@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/poojajethva.github.io/blog/static/css/main.92a6e0c1.css",
+    "main.js": "/poojajethva.github.io/blog/static/js/main.733f5560.js",
+    "index.html": "/poojajethva.github.io/blog/index.html",
+    "main.92a6e0c1.css.map": "/poojajethva.github.io/blog/static/css/main.92a6e0c1.css.map",
+    "main.733f5560.js.map": "/poojajethva.github.io/blog/static/js/main.733f5560.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92a6e0c1.css",
+    "static/js/main.733f5560.js"
+  ]
+}
