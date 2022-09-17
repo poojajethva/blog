@@ -12,7 +12,7 @@ function List() {
   const [isSearch, setIsSearch] = useState(false);
 
   useEffect(() => {
-    dispatch(initListings());
+    listings.length === 0 && dispatch(initListings());
   }, [dispatch]);
 
   useEffect(() => {
