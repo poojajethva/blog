@@ -23,6 +23,8 @@ export const commentsReducer = (state = [], action) => {
   switch (action.type) {
     case "GET_COMMENTS":
       return [ ...state, ...action.data ];
+    case "CLEAR_COMMENTS":
+      return [];
     default:
       return state;
   }

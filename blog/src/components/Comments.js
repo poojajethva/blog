@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getComments } from "../redux/actions";
+import { clearComments, getComments } from "../redux/actions";
 import Loading from "./Loading";
 
 function Comments({ id }) {
@@ -11,6 +11,12 @@ function Comments({ id }) {
     setExpand(!expand);
     if (comments.length === 0) dispatch(getComments(id));
   };
+
+  useEffect(() => {
+    return () => {
+      dispatch(clearComments());
+    };
+  }, [dispatch])
 
   return (
     <div>

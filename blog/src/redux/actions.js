@@ -36,3 +36,9 @@ export const getComments = (id) => {
       });
     };
   };
+
+  export const clearComments = () => {
+    return {
+      type: "CLEAR_COMMENTS",
+    };
+  };
